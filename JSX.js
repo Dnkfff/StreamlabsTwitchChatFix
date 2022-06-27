@@ -11,24 +11,31 @@
 
 import React from 'react';
 
-const App = (props) => {
-  window.addEventListener('onLoad', (event) => {
-    // ...
+const App = (...props) => {
+  window.addEventListener('onLoad', (...event) => {
+    // some code here
   });
-  window.addEventListener('onEventReceived', (event) => {
-    // ...
+  window.addEventListener('onEventReceived', (...event) => {
+    // and here ;P
   });
   return (
-    <div className='container'>
-      <h1>Welcome to the onLoad Listening Component</h1>
-      <h2>Welcome to the onEventReceived Listening Component</h2>
-    </div>
+    <div data-from="{from}" data-id="{messageId}">
+    <span class="meta" style="color: {color}">
+      <span class="badges">
+      </span>
+      <span class="name">{from}</span>
+    </span>
+
+    <span class="message">
+      {message}
+    </span>
+  </div>
   );
 };
 
-console.log(App());
+//console.log(App());
 
-console.log(App() ? undefined : null);
+//console.log(App() ? undefined : null);
 
 try {
   if(App()){
@@ -48,3 +55,5 @@ useEffect(
     },
     [props.source],
 );
+
+export default { App, useEffect };
