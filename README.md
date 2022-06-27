@@ -3,4 +3,5 @@ Have tryed to run it on html+css+js, didn't worked well. So I've decided to rewr
 
 ## 👇 Basically, it is looking like this ಠ_ಠ
 
-![Alt text](/img/streamLabsCode.jpg?raw=true "Optional Title")
+![HTML.html](/img/streamLabsCode(html).jpg?raw=true "Optional Title")
+![JSx.js](/img/streamLabsCode(js).jpg?raw=true "Optional Title")
