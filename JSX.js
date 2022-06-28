@@ -19,7 +19,7 @@ const App = (...props) => {
     // and here ;P
   });
   return (
-    <div data-from="{from}" data-id="{messageId}">
+    <div data-from="{yourTwitchAccount}" data-id="{messageId}">
     <span class="meta" style="color: {color}">
       <span class="badges">
       </span>
@@ -37,11 +37,13 @@ const App = (...props) => {
 
 //console.log(App() ? undefined : null);
 
+// if App is not working in case of errors or React dependency problems run the useEffect function, which is renev the subscription 
 try {
-  if(App()){
-    console.error()
+  if(App() === undefined || App() === null){
+    useEffect();
+  } else {
+    useEffect2(didUpdate);;
   }
-  
 } catch (message) {
   console.error(message)
 }
@@ -55,5 +57,15 @@ useEffect(
     },
     [props.source],
 );
+
+//use second if first one consoling errors/
+
+useEffect2(() => {
+  const subscription = props.source.subscribe();
+  return () => {
+    // Clean up the subscription
+    subscription.unsubscribe();
+  };
+});
 
 export default { App, useEffect };
