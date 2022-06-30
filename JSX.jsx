@@ -22,9 +22,6 @@ const App = (...props) => {
   );
 };
 
-//console.log(App());
-
-//console.log(App() ? undefined : null);
 
 // if App is not working in case of errors or React dependency problems run the useEffect function, which starts the subscription 
 
@@ -32,7 +29,7 @@ try {
   if(App() === undefined || App() === null){
     useEffect();
   } else {
-    useEffect2(didUpdate);;
+    useEffect2(didUpdate);
   }
 } catch (message) {
   console.error(message)
