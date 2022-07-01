@@ -28,7 +28,7 @@ body { // this is not working x)
 */
 
 .colon {
-    display: none;
+    display: inherit;
 }
 
 #log {
