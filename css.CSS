@@ -8,8 +8,11 @@ html, body {
     height: 100%;
     overflow: hidden;
 }
+
 /*
-body { // this is not working x)
+// this is not working x)
+*/
+body {
     
     
     text-shadow: 0 0 1px #000, 0 0 2px #000;
@@ -25,7 +28,7 @@ body { // this is not working x)
     animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
     -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
 }
-*/
+
 
 .colon {
     display: inherit;
