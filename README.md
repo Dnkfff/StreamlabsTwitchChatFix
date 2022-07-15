@@ -11,3 +11,8 @@ My tryes to fix reflection of chat onto OBS view page.
 and CSS was not been touched, everything else was rewrited
 
 # Now it is working, hopefully. 
+
+### TODO
+- add task list
+- fix styles
+- get these shit up, so it could work well
